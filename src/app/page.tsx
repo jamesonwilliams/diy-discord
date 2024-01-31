@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="px-8">
       <p className="py-4">
         Some tools to help find DIY resources. <Link className="font-bold" target="_blank" href="https://discord.gg/diyordie">Join the discord server!</Link>
       </p>
