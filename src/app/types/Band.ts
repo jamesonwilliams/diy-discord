@@ -1,4 +1,4 @@
-import { LatLong } from "./LatLong";
+import { Location } from "./Location";
 
 export interface Band {
   name: string;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Band } from "../types/Band";
 import fs from "fs";
 import path from 'path';
@@ -7,8 +7,10 @@ import BandList from "./BandList";
 export default async function Page() {
   return (
     <div>
-      <BandList bands={getBands()} />
-      <p className="pt-16">* Bands above have put out new music or played recent shows as of 2023.</p>
+      <Suspense fallback={<div>Loading...</div>}>
+        <BandList bands={getBands()} />
+        <p className="pt-16">* Bands above have put out new music or played recent shows as of 2023.</p>
+      </Suspense>
     </div>
   );
 };
