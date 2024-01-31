@@ -18,25 +18,20 @@ export default function BandList({ bands }: { bands: Band[] }) {
   return (
     <>
       <SortButton sortKey={sortKey} initialLocation={location} />
-      <table className="min-w-full divide-y divide-gray-200">
-        <thead className="text-left">
-          <tr>
-            <th>Name</th>
-            <th>Location</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {sortedBands.map((band: Band) => (
-            <BandRow key={band.name} band={band} />
-          ))}
-        </tbody>
-      </table>
+      <div className="flex-grow">
+        {sortedBands.map((band: Band) => (
+          <BandRow key={band.name} band={band} />
+        ))}
+      </div>
     </>
   );
 }
 
-function sortBands(bands: Band[], sortKey: SortKey, location: LatLong | undefined): Band[] {
+function sortBands(
+  bands: Band[],
+  sortKey: SortKey,
+  location: LatLong | undefined
+): Band[] {
   return bands.sort((a: Band, b: Band) => {
     if (sortKey === SortKey.bandName) {
       return compareNames(a.name, b.name);
@@ -50,15 +45,17 @@ function sortBands(bands: Band[], sortKey: SortKey, location: LatLong | undefine
 
 function BandRow({ band }: { band: Band }) {
   return (
-    <tr>
-      <td className="pr-8">{band.name}</td>
-      <td className="pr-8">
-        {band.homeBase.city}, {band.homeBase.state}
-      </td>
-      <td className="pr-8 text-gray-500">
-        <SocialsList socials={band.socials} />
-      </td>
-    </tr>
+    <div className="py-4 border-t border-gray-500">
+      <strong>{band.name}</strong>
+      <ul className="flex justify-between">
+        <li className="">
+          {band.homeBase.city}, {band.homeBase.state}
+        </li>
+        <li className="">
+          <SocialsList socials={band.socials} />
+        </li>
+      </ul>
+    </div>
   );
 }
 

@@ -6,5 +6,6 @@ export default function Home() {
   alt="DIY Discord" 
   width="500"
   height="500"
+  priority={true}
   />;
 }

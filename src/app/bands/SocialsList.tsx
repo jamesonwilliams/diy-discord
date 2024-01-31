@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function SocialsList({ socials }: { socials: Socials }) {
   return (
-    <ul className="flex space-x-2">
+    <ul className="space-x-2 inline-flex text-gray-500">
       {socials.instagram &&
       <li>
         <Link href={socials.instagram} target="_blank">
