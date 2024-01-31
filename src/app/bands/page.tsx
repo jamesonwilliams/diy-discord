@@ -8,7 +8,7 @@ export default async function Page() {
   return (
     <div>
       <BandList bands={getBands()} />
-      <p className="pt-16">* Bands above have put out new music as of 2023.</p>
+      <p className="pt-16">* Bands above have put out new music or played recent shows as of 2023.</p>
     </div>
   );
 };

@@ -654,7 +654,7 @@
       "country": "US",
       "latLong": {
         "lat": 35.159519,
-        "long": -84.876610
+        "long": -84.87661
       }
     },
     "socials": {
@@ -940,7 +940,7 @@
       "state": "OK",
       "country": "US",
       "latLong": {
-        "lat": 36.1540,
+        "lat": 36.154,
         "long": -95.9928
       }
     },
@@ -949,6 +949,276 @@
       "twitter": "https://twitter.com/cliffdiverok",
       "bandcamp": "https://cliffdiverok.bandcamp.com/",
       "instagram": "https://www.instagram.com/cliffdiverok"
+    }
+  },
+  {
+    "name": "Heart to Gold",
+    "homeBase": {
+      "city": "Minneapolis",
+      "state": "MN",
+      "country": "US",
+      "latLong": {
+        "lat": 44.9778,
+        "long": -93.265
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0vLOlcZV1lvUZEawqLrXez?si=L1qJTZ80SPusQDSGO8fmWA",
+      "twitter": "https://twitter.com/heart2gold",
+      "bandcamp": "https://hearttogold.bandcamp.com/",
+      "instagram": "https://www.instagram.com/hearttogold"
+    }
+  },
+  {
+    "name": "Stars Hollow",
+    "homeBase": {
+      "city": "Des Moines",
+      "state": "IA",
+      "country": "US",
+      "latLong": {
+        "lat": 41.5868,
+        "long": -93.625
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/5gDuvgApWbVzFLVBeLCbMJ?si=whWZQqQdSjyJUj8SGNbQzA",
+      "twitter": "https://twitter.com/starshollowia",
+      "bandcamp": "https://starshollowia.bandcamp.com/",
+      "instagram": "https://www.instagram.com/starshollowia"
+    }
+  },
+  {
+    "name": "Arcadia Gray",
+    "homeBase": {
+      "city": "Chicago",
+      "state": "IL",
+      "country": "US",
+      "latLong": {
+        "lat": 41.8781,
+        "long": -87.6298
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0jVOavowJ5X4ooKXX5PcM1?si=ZyJjk9PLSAGwYYWTEmAiPQ",
+      "twitter": "https://twitter.com/arcadia_grey",
+      "bandcamp": "https://arcadiagrey.bandcamp.com/",
+      "instagram": "https://www.instagram.com/arcadia_grey"
+    }
+  },
+  {
+    "name": "Hey, ILY!",
+    "homeBase": {
+      "city": "Billings",
+      "state": "MT",
+      "country": "US",
+      "latLong": {
+        "lat": 45.7833,
+        "long": -108.5007
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/73XtH9MpvvvcUxQxYEAX15?si=6H_960BRS9CNGFzCskCqVg",
+      "twitter": "https://twitter.com/heyilyforever",
+      "bandcamp": "https://heyilyband.bandcamp.com/",
+      "instagram": "https://www.instagram.com/heyilyforever/"
+    }
+  },
+  {
+    "name": "TRSH",
+    "homeBase": {
+      "city": "Springfield",
+      "state": "MO",
+      "country": "US",
+      "latLong": {
+        "lat": 37.2083,
+        "long": -93.2923
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/5Sc8WcS3n1oX5iSGlXD2j9?si=rXhnaVThTYG0kbflD4w4Hw",
+      "twitter": "https://twitter.com/TRSH_MIDWEST",
+      "bandcamp": "https://trsh3.bandcamp.com/",
+      "instagram": "https://www.instagram.com/trsh.midwest"
+    }
+  },
+  {
+    "name": "Michael Cera Palin",
+    "homeBase": {
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "US",
+      "latLong": {
+        "lat": 33.749,
+        "long": -84.388
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/4GyAROzBnWHCBr638r5TVP?si=YlA5D6JvSrab8umN8U3O1A",
+      "twitter": "https://twitter.com/mcp_emo",
+      "bandcamp": "https://michaelcerapalin.bandcamp.com/",
+      "instagram": "https://www.instagram.com/michaelcerapalin"
+    }
+  },
+  {
+    "name": "Cheem",
+    "homeBase": {
+      "city": "Hartford",
+      "state": "CT",
+      "country": "US",
+      "latLong": {
+        "lat": 41.7658,
+        "long": -72.6734
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2bRu14RxwtT4Uu9uZI3vdH?si=zldEPjXaQsu7u0xwpB8i4A",
+      "twitter": "https://twitter.com/cheem_szn",
+      "bandcamp": "https://cheem.bandcamp.com/",
+      "instagram": "https://www.instagram.com/cheem.szn"
+    }
+  },
+  {
+    "name": "Camping in Alaska",
+    "homeBase": {
+      "city": "Huntsville",
+      "state": "AL",
+      "country": "US",
+      "latLong": {
+        "lat": 34.7304,
+        "long": -86.5861
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2As5mhLZq1gVOdBPrZ0TUA?si=9Ge5bErKTjOxvXom7WulFg",
+      "twitter": "https://twitter.com/campinginalaska",
+      "bandcamp": "https://campinginalaska.bandcamp.com/",
+      "instagram": "https://twitter.com/campininalaska"
+    }
+  },
+  {
+    "name": "Dikembe",
+    "homeBase": {
+      "city": "Gainesville",
+      "state": "FL",
+      "country": "US",
+      "latLong": {
+        "lat": 29.6516,
+        "long": -82.3248
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/4VZU5Lb3hP2j1bOpZ2JdKi?si=AawugXmuQdOyToK1WWGrbw",
+      "twitter": "https://twitter.com/dikembedudes",
+      "bandcamp": "https://dikembe.bandcamp.com/",
+      "instagram": "https://www.instagram.com/dikembedudes"
+    }
+  },
+  {
+    "name": "Riley!",
+    "homeBase": {
+      "city": "Rio Grande Valley",
+      "state": "TX",
+      "country": "US",
+      "latLong": {
+        "lat": 26.2034,
+        "long": -98.2301
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/6mxWaHNcOgrJeD8NCRenps?si=8HlBR5H_Ss29N32PmDqp2Q",
+      "twitter": "https://twitter.com/RILEYtheband",
+      "bandcamp": "https://rileytheband.bandcamp.com/",
+      "instagram": "https://www.instagram.com/rileytheband"
+    }
+  },
+  {
+    "name": "Smoke Detector",
+    "homeBase": {
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "US",
+      "latLong": {
+        "lat": 33.749,
+        "long": -84.388
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2HBDXRQZZJyKINI8JUE1Ff?si=2-YDnqw5RICybSb7WWs_Ew",
+      "twitter": "https://twitter.com/smokedetector69",
+      "bandcamp": "https://smokedetector.bandcamp.com/",
+      "instagram": "https://www.instagram.com/smokedetector69/"
+    }
+  },
+  {
+    "name": "Bicycle Inn",
+    "homeBase": {
+      "city": "Attleboro",
+      "state": "MA",
+      "country": "US",
+      "latLong": {
+        "lat": 41.9445,
+        "long": -71.2856
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/1yASKWIXocIGDMpUt9AyoR?si=o-NRmXjIRfG06rO058Y_qQ",
+      "twitter": "https://twitter.com/BicycleInn",
+      "bandcamp": "https://bicycleinn.bandcamp.com/",
+      "instagram": "https://www.instagram.com/bicycleinn/"
+    }
+  },
+  {
+    "name": "Honey Creek",
+    "homeBase": {
+      "city": "Milwaukee",
+      "state": "WI",
+      "country": "US",
+      "latLong": {
+        "lat": 43.0389,
+        "long": -87.9065
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/7eq9C5AmO3MfarSLH31FlH?si=aRPy5nwDRkm4kRsr0le3Rw",
+      "twitter": "https://twitter.com/HoneyCreekMusic",
+      "bandcamp": "https://honeycreekwi.bandcamp.com/",
+      "instagram": "https://www.instagram.com/honeycreekmusic/"
+    }
+  },
+  {
+    "name": "Garden Home",
+    "homeBase": {
+      "city": "Milwaukee",
+      "state": "WI",
+      "country": "US",
+      "latLong": {
+        "lat": 43.0389,
+        "long": -87.9065
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/7wLVViY9zOdtKJpBhXygTt?si=W9tUTv2oRGW2879cHbnBdA",
+      "twitter": "https://twitter.com/gardenhomewi",
+      "bandcamp": "https://gardenhome.bandcamp.com/",
+      "instagram": "https://www.instagram.com/gardenhomewi/"
+    }
+  },
+  {
+    "name": "Arlen Gun Club",
+    "homeBase": {
+      "city": "Cincinnati",
+      "state": "OH",
+      "country": "US",
+      "latLong": {
+        "lat": 39.1031,
+        "long": -84.512
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/3PTGHZjy8SZJNmMibnYSST?si=5pfV-yVIQNqGtiu7mG2v-A",
+      "twitter": "https://twitter.com/arlengun",
+      "bandcamp": "https://arlengunclub.bandcamp.com/",
+      "instagram": "https://www.instagram.com/arlengunclub/"
     }
   }
 ]

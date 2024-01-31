@@ -32,16 +32,27 @@ export default function SortButton({
     );
   },[initialLocation]);
 
-  const buttonText =
-    sortKey === SortKey.bandName && location !== undefined ? "Sort by distance" : "Sort by name";
-    
   return (
-    <button
-      className="pb-8"
-      onClick={() => navigate(sortKey, location, router)}
-    >
-      {buttonText}
-    </button>
+    <>
+      <ul className="flex gap-8">
+        <li>
+          <button
+            className="pb-8"
+            onClick={() => navigate(SortKey.bandName, undefined, router)}
+          >
+            Sort by name
+          </button>
+        </li>
+        {location !== undefined && <li>
+          <button
+            className="pb-8"
+            onClick={() => navigate(SortKey.location, location, router)}
+          >
+            Sort by closest to you
+          </button>
+        </li> || <p className="opacity-50">Getting your location...</p>}
+      </ul>
+    </>
   );
 }
 
@@ -50,7 +61,7 @@ function navigate(
   location: LatLong | undefined,
   router: AppRouterInstance
 ) {
-  if (sortKey === SortKey.bandName && location !== undefined) {
+  if (sortKey === SortKey.location && location !== undefined) {
     router.push(
       `?sort=${SortKey.location}&lat=${location.lat}&long=${location.long}`
     );
