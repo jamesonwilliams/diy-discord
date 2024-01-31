@@ -16,17 +16,13 @@ export default async function Page() {
   });
 
   return (
-    <div>
+    <div className="min-w-full">
       <Suspense fallback={<div>Loading...</div>}>
         <MapWithMarkers
           coordinates={coordinates}
           mapsApiKey={process.env.GOOGLE_MAPS_API_KEY!!}
         />
         <BandList bands={bands} />
-        <p className="pt-16">
-          * Bands above have put out new music or played recent shows as of
-          2023.
-        </p>
       </Suspense>
     </div>
   );

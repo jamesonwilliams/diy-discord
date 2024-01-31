@@ -3,9 +3,11 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
+    <div>
+      <p className="py-4">
+        Some tools to help find DIY resources. <Link className="font-bold" target="_blank" href="https://discord.gg/diyordie">Join the discord server!</Link>
+      </p>
       <Link target="_blank" href="https://discord.gg/diyordie">
-        <p>Join the discord server!</p>
         <Image
           src="/welcome.jpg"
           alt="DIY Discord"
@@ -15,6 +17,6 @@ export default function Home() {
           className="rounded-2xl"
         />
       </Link>
-    </>
+    </div>
   );
 }

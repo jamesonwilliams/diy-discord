@@ -34,7 +34,7 @@ export default function SortButton({
 
   return (
     <>
-      <ul className="flex gap-8">
+      <ul className="flex gap-8 font-bold">
         <li>
           <button
             className="pb-8"
