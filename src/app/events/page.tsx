@@ -1,7 +1,19 @@
-import { Metadata } from "next";
+import fs from "fs";
+import path from "path";
+import EventList from "./EventList";
 
-export default function Page() {
+export default async function Page() {
   return (
-    <h1>Not events yet, working on it</h1>
+    <div>
+      <EventList events={getEvents()} />
+    </div>
   );
+}
+
+function getEvents(): Event[] {
+  const jsonPath = path.join(process.cwd(), "data", "events.json");
+  const eventData = fs.readFileSync(jsonPath, "utf8");
+  return JSON.parse(eventData).sort((a: Event, b: Event) => {
+    return a.startDate > b.startDate ? 1 : -1;
+  });
 }

@@ -250,5 +250,705 @@
       "bandcamp": "https://sw33tpill.bandcamp.com/",
       "instagram": "https://www.instagram.com/sweetpilll"
     }
+  },
+  {
+    "name": "Kerosene Heights",
+    "homeBase": {
+      "city": "Asheville",
+      "state": "NC",
+      "country": "US",
+      "latLong": {
+        "lat": 35.5951,
+        "long": -82.5515
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0D4NkuZAkjfdm5clMtYYrz?si=eaIXAsaHS1qHLWxgwxiKWQ",
+      "twitter": "https://twitter.com/keroseneheights",
+      "bandcamp": "https://keroseneheights.bandcamp.com/",
+      "instagram": "https://www.instagram.com/keroseneheights"
+    }
+  },
+  {
+    "name": "Yes Yes A Thousand Times Yes",
+    "homeBase": {
+      "city": "Pittsburgh",
+      "state": "PA",
+      "country": "US",
+      "latLong": {
+        "lat": 40.4406,
+        "long": -79.9959
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/5635UYteSXvKOVZOQRejuO?si=6FM6_6iSQgqXelZvxLYNFA",
+      "twitter": "https://twitter.com/yy1kxy",
+      "bandcamp": "https://yy1kxy.bandcamp.com/",
+      "instagram": "https://www.instagram.com/yy1kxy/"
+    }
+  },
+  {
+    "name": "as a sketch pad",
+    "homeBase": {
+      "city": "Tokyo",
+      "state": "JP",
+      "country": "JP",
+      "latLong": {
+        "lat": 35.6895,
+        "long": 139.6917
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/7sodmy6s5p5WHrN3HrzHWg?si=16lnCl6eTdKHULj9bG4ToA",
+      "twitter": "https://twitter.com/asasketchpad",
+      "bandcamp": "https://asasketchpad.bandcamp.com/",
+      "instagram": "https://www.instagram.com/asasketchpad"
+    }
+  },
+  {
+    "name": "I Love Your Lifestyle",
+    "homeBase": {
+      "city": "Malmö",
+      "state": "SE",
+      "country": "SE",
+      "latLong": {
+        "lat": 55.604981,
+        "long": 13.003822
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2gHsHeJxm4bTuS94fKQgB5?si=q3psVg1bQSulG-USfneJ1g",
+      "twitter": "https://twitter.com/ILYL_band",
+      "bandcamp": "https://iloveyourlifestyle.bandcamp.com/",
+      "instagram": "https://www.instagram.com/Iloveyourlifestyleband/"
+    }
+  },
+  {
+    "name": "Swiss Army Wife",
+    "homeBase": {
+      "city": "Portland",
+      "state": "OR",
+      "country": "US",
+      "latLong": {
+        "lat": 45.5051,
+        "long": -122.675
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/6oO6omp7KVcpUx8cHov0uI?si=IU2uVBrKT7O7HT02wiCM-A",
+      "twitter": "https://twitter.com/SwissArmyWifey",
+      "bandcamp": "https://swissarmywife.bandcamp.com/",
+      "instagram": "https://www.instagram.com/swissarmywifeband"
+    }
+  },
+  {
+    "name": "Avec Plaisir",
+    "homeBase": {
+      "city": "Montreal",
+      "state": "QC",
+      "country": "CA",
+      "latLong": {
+        "lat": 45.5051,
+        "long": -122.675
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/45OR9taqVY8Pkll6PQg9xI?si=eDJJ0UUxRMyybshUWntqfQ",
+      "twitter": "https://twitter.com/avecplaisirband",
+      "bandcamp": "https://avecplaisir.bandcamp.com",
+      "instagram": "https://www.instagram.com/avecplaisirband/"
+    }
+  },
+  {
+    "name": "Summerbruise",
+    "homeBase": {
+      "city": "Indianapolis",
+      "state": "IN",
+      "country": "US",
+      "latLong": {
+        "lat": 39.7684,
+        "long": -86.1581
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/7dlw6SU2bPJj7kjKKMjhA5?si=kWW3o5jbQ_ewT4Yc_xKX_A",
+      "twitter": "https://twitter.com/summerbruise69",
+      "bandcamp": "https://summerbruise.bandcamp.com/",
+      "instagram": "https://www.instagram.com/summerbruise69"
+    }
+  },
+  {
+    "name": "Origami Angel",
+    "homeBase": {
+      "city": "Washington",
+      "state": "DC",
+      "country": "US",
+      "latLong": {
+        "lat": 38.9072,
+        "long": -77.0369
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0cmSXx965Hnm6fP42oW6vY?si=d5LnmVzXRFqtQ5iex4yRCQ",
+      "twitter": "https://twitter.com/GAMIGANG",
+      "bandcamp": "https://origamiangel.bandcamp.com/",
+      "instagram": "https://www.instagram.com/gami.gang"
+    }
+  },
+  {
+    "name": "Mauve",
+    "homeBase": {
+      "city": "Portland",
+      "state": "OR",
+      "country": "US",
+      "latLong": {
+        "lat": 45.5051,
+        "long": -122.675
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0ceapGzVPd5KzKgQRPLYYm?si=8n0mD1aAR8-AJLbqhvNCHA",
+      "twitter": "https://twitter.com/mauvepnw",
+      "bandcamp": "https://mauvepdx.bandcamp.com/",
+      "instagram": "https://www.instagram.com/mauvetheband/"
+    }
+  },
+  {
+    "name": "Sign Language",
+    "homeBase": {
+      "city": "Cincinnati",
+      "state": "OH",
+      "country": "US",
+      "latLong": {
+        "lat": 39.1031,
+        "long": -84.512
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/3KdIx1AzUI5DQCazdl4yKg?si=se2uEGvqSJyyDNhOV4vdCw",
+      "twitter": "https://twitter.com/SLCINCI",
+      "bandcamp": "https://signlanguagecinci.bandcamp.com/",
+      "instagram": "https://www.instagram.com/signlanguagecinci"
+    }
+  },
+  {
+    "name": "Equipment",
+    "homeBase": {
+      "city": "Toledeo",
+      "state": "OH",
+      "country": "US",
+      "latLong": {
+        "lat": 41.6528,
+        "long": -83.5379
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/1xxn3mhlUmOugl1ZhE0Mcx?si=M1rFIsmaT-SgPfYytMdMYw",
+      "twitter": "https://twitter.com/equipment_ohio",
+      "bandcamp": "https://equipment.bandcamp.com/",
+      "instagram": "https://www.instagram.com/equipment_ohio"
+    }
+  },
+  {
+    "name": "Tiny Voices",
+    "homeBase": {
+      "city": "Oshkosh",
+      "state": "WI",
+      "country": "US",
+      "latLong": {
+        "lat": 44.0247,
+        "long": -88.5426
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/09slOICvQXnXEGDUSjmEaD?si=GGwbEUCsQdWZJ5qQ3YH8Og",
+      "twitter": "https://twitter.com/TinyVoicesWI",
+      "bandcamp": "https://tinyvoices1.bandcamp.com/",
+      "instagram": "https://www.instagram.com/tinyvoiceswi/"
+    }
+  },
+  {
+    "name": "Juice Falls",
+    "homeBase": {
+      "city": "Indianapolis",
+      "state": "IN",
+      "country": "US",
+      "latLong": {
+        "lat": 39.7684,
+        "long": -86.1581
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/7s266YcgYNLKCPz9Et5Vaf?si=mRh2fiUtRv2XBw_ymDLv1g",
+      "twitter": "https://twitter.com/JuiceFallsIN",
+      "bandcamp": "https://juicefallsin.bandcamp.com/",
+      "instagram": "https://www.instagram.com/juicefallsin/"
+    }
+  },
+  {
+    "name": "Thanks! I Hate It",
+    "homeBase": {
+      "city": "Hollister",
+      "state": "CA",
+      "country": "US",
+      "latLong": {
+        "lat": 36.8529,
+        "long": -121.4016
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2AXYLreE6e33pDQgQNNNyu?si=wsHv2hvMQ0qqhwYOnCuhrA",
+      "twitter": "https://twitter.com/thanksihateitca",
+      "bandcamp": "https://thanksihateitca.bandcamp.com/",
+      "instagram": "https://www.instagram.com/thanksihateitca/"
+    }
+  },
+  {
+    "name": "Me Too, Thanks",
+    "homeBase": {
+      "city": "Edmond",
+      "state": "OK",
+      "country": "US",
+      "latLong": {
+        "lat": 35.6528,
+        "long": -97.4781
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/4PQdlHRsTRlIiHnxJLVC1h?si=9igCSOZCRyiTsHG2wxUqLw",
+      "twitter": "https://twitter.com/me2thanksband",
+      "bandcamp": "https://metoothanksband.bandcamp.com/",
+      "instagram": "https://www.instagram.com/metoothanksofficial/"
+    }
+  },
+  {
+    "name": "Leisure Hour",
+    "homeBase": {
+      "city": "Muncie",
+      "state": "IN",
+      "country": "US",
+      "latLong": {
+        "lat": 40.1934,
+        "long": -85.3864
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/4PQdlHRsTRlIiHnxJLVC1h?si=KISYPghNRAOEObN9WIFKWw",
+      "twitter": "https://twitter.com/Leisure_Hour_",
+      "bandcamp": "https://leisurehour.bandcamp.com/",
+      "instagram": "https://www.instagram.com/leisure.hour/"
+    }
+  },
+  {
+    "name": "Hot Mulligan",
+    "homeBase": {
+      "city": "Lansing",
+      "state": "MI",
+      "country": "US",
+      "latLong": {
+        "lat": 42.7325,
+        "long": -84.5555
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/1lKZzN2d4IqiEYxyECIEHI?si=bcCd_9mbRgadrVGnKC6GTQ",
+      "twitter": "https://twitter.com/hotmulligan",
+      "bandcamp": "https://hotmulligan.bandcamp.com/",
+      "instagram": "https://www.instagram.com/hotmulligan"
+    }
+  },
+  {
+    "name": "Oso Oso",
+    "homeBase": {
+      "city": "Long Beach",
+      "state": "NY",
+      "country": "US",
+      "latLong": {
+        "lat": 40.5887,
+        "long": -73.6579
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/63GTn25wbdRNX3ijCHvYxD?si=yMVVdollRTSG5XekZA1yrA",
+      "twitter": "https://twitter.com/osoosoband",
+      "bandcamp": "https://osoosoband.bandcamp.com/",
+      "instagram": "https://www.instagram.com/osoosoband"
+    }
+  },
+  {
+    "name": "Week Knees",
+    "homeBase": {
+      "city": "Nashville",
+      "state": "TN",
+      "country": "US",
+      "latLong": {
+        "lat": 36.1627,
+        "long": -86.7816
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/3oUNnuTD9o0ozB1Ze7lJEc?si=KGZ-LQj3S6ej71vOMOXV1Q",
+      "twitter": "https://twitter.com/weekkneestn",
+      "bandcamp": "https://weekknees.bandcamp.com/",
+      "instagram": "https://www.instagram.com/weakweakknees"
+    }
+  },
+  {
+    "name": "Home Is Where",
+    "homeBase": {
+      "city": "Palm Coast",
+      "state": "FL",
+      "country": "US",
+      "latLong": {
+        "lat": 29.5845,
+        "long": -81.2079
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/1umUe3DQdjTkk0LoMuwcj2?si=M1MIrPwHTFmFJz58LvRDIg",
+      "twitter": "https://twitter.com/homeiswhereband",
+      "bandcamp": "https://homeiswhere.bandcamp.com/",
+      "instagram": "https://www.instagram.com/homeiswhereband/"
+    }
+  },
+  {
+    "name": "Small Comforts",
+    "homeBase": {
+      "city": "Marquette",
+      "state": "MI",
+      "country": "US",
+      "latLong": {
+        "lat": 46.5436,
+        "long": -87.3956
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/1uQCfaNkO1VjnH5zpNOeIU?si=cHEQzzjLSY6tR9LPCuNxCQ",
+      "bandcamp": "https://smallcomfortsband.bandcamp.com/",
+      "instagram": "https://www.instagram.com/smallcomforts.band/"
+    }
+  },
+  {
+    "name": "Fly Over States",
+    "homeBase": {
+      "city": "Billings",
+      "state": "MT",
+      "country": "US",
+      "latLong": {
+        "lat": 45.7833,
+        "long": -108.5007
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/48KfiCOdSLwnV9jPQqTDYW?si=l-0Q-9h9TWySWDvM-zUa6g",
+      "twitter": "https://twitter.com/flyoverstatesmt",
+      "bandcamp": "https://flyoverstatesband.bandcamp.com/",
+      "instagram": "https://www.instagram.com/flyoverstatesmt"
+    }
+  },
+  {
+    "name": "Guitar Fight from Fooly Cooly",
+    "homeBase": {
+      "city": "Cleveland",
+      "state": "TN",
+      "country": "US",
+      "latLong": {
+        "lat": 35.159519,
+        "long": -84.876610
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/6mJuP6zvtXUAVL9xjxZiDL?si=S0cWkcjuRTSCTEks2YoOoA",
+      "twitter": "https://twitter.com/gfx3c",
+      "bandcamp": "https://guitarfightfromfoolycooly.bandcamp.com/",
+      "instagram": "https://www.instagram.com/gfx3c/"
+    }
+  },
+  {
+    "name": "awakebutstillinbed",
+    "homeBase": {
+      "city": "San Jose",
+      "state": "CA",
+      "country": "US",
+      "latLong": {
+        "lat": 37.33548,
+        "long": -121.893028
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0NvYpRJfbFyOI4QdsLJ1Jw?si=qS4FLyo3Sb--kHCCVJIlMQ",
+      "twitter": "https://twitter.com/absibca",
+      "bandcamp": "https://awakebutstillinbed.bandcamp.com/",
+      "instagram": "https://www.instagram.com/awakebutstillinbed/"
+    }
+  },
+  {
+    "name": "Clipboards",
+    "homeBase": {
+      "city": "East Lansing",
+      "state": "MI",
+      "country": "US",
+      "latLong": {
+        "lat": 42.736979,
+        "long": -84.483865
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2W0eDujlxWH6r88PbP9AaX?si=5mg1rQqDSbCHAetp8vMV5Q",
+      "twitter": "https://twitter.com/clipboards_mi",
+      "bandcamp": "https://clipboards.bandcamp.com/",
+      "instagram": "https://www.instagram.com/clipboards_mi"
+    }
+  },
+  {
+    "name": "Forage & Wander",
+    "homeBase": {
+      "city": "Cleveland",
+      "state": "OH",
+      "country": "US",
+      "latLong": {
+        "lat": 41.4993,
+        "long": -81.6944
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/3dK6SlbUbkCL6jBHgwWkUf?si=QivkuNDaSSKqNo3T2gSuRg",
+      "twitter": "https://twitter.com/forageandwander",
+      "bandcamp": "https://forageandwanderoh.bandcamp.com/",
+      "instagram": "https://www.instagram.com/forageandwanderoh"
+    }
+  },
+  {
+    "name": "Nick Webber",
+    "homeBase": {
+      "city": "Englewood",
+      "state": "CO",
+      "country": "US",
+      "latLong": {
+        "lat": 39.6478,
+        "long": -104.9876
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0Di7L6ZzMiHqFM1HLljyGf?si=kxPdA77LRLiYSBxVgoWBhQ",
+      "bandcamp": "https://wicknebber.bandcamp.com/",
+      "instagram": "https://www.instagram.com/wicknebber/"
+    }
+  },
+  {
+    "name": "A Place for Owls",
+    "homeBase": {
+      "city": "Denver",
+      "state": "CO",
+      "country": "US",
+      "latLong": {
+        "lat": 39.7392,
+        "long": -104.9903
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/5LjHrLecrhxnVJYlqDzSe2?si=XZ4oBB7mRveB9xfsHMoWvw",
+      "twitter": "https://twitter.com/aplaceforowls",
+      "bandcamp": "https://aplaceforowls.bandcamp.com/",
+      "instagram": "https://www.instagram.com/aplaceforowls"
+    }
+  },
+  {
+    "name": "Gwuak!",
+    "homeBase": {
+      "city": "Abuquerque",
+      "state": "NM",
+      "country": "US",
+      "latLong": {
+        "lat": 35.0844,
+        "long": -106.6506
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/6x2H0yh7QKr6lYeFb8ieyE?si=u5YlpbdyRK-93NujKtiXnA",
+      "twitter": "https://twitter.com/gwuak",
+      "bandcamp": "https://gwuak.bandcamp.com/",
+      "instagram": "https://www.instagram.com/gwuakrock/"
+    }
+  },
+  {
+    "name": "Liquid Mike",
+    "homeBase": {
+      "city": "Marquette",
+      "state": "MI",
+      "country": "US",
+      "latLong": {
+        "lat": 46.5436,
+        "long": -87.3956
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/6WP8xxDLcPKNgdQWjU3BzN?si=BzKXTKMiR_2Al5Rjs_PYuQ",
+      "twitter": "https://twitter.com/liquidmikeband",
+      "bandcamp": "https://liquidmike.bandcamp.com/",
+      "instagram": "https://www.instagram.com/liquidmikeband/"
+    }
+  },
+  {
+    "name": "Robo Pumpkin",
+    "homeBase": {
+      "city": "Boston",
+      "state": "MA",
+      "country": "US",
+      "latLong": {
+        "lat": 42.3601,
+        "long": -71.0589
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/6RU2UUN1UIOWpP3aO6M70K?si=cFE4hoWzSWaF0LniLUEkyg",
+      "twitter": "https://twitter.com/robo_pumpkin",
+      "bandcamp": "https://robopumpkin.bandcamp.com/",
+      "instagram": "https://www.instagram.com/robopumpkin"
+    }
+  },
+  {
+    "name": "Koyo",
+    "homeBase": {
+      "city": "Stony Brook",
+      "state": "NY",
+      "country": "US",
+      "latLong": {
+        "lat": 40.9126,
+        "long": -73.123
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/album/15At5fBHrNsaLtWA7dNWIA?si=RfCqh9_NSHiHiGCcDyvVDg",
+      "twitter": "https://twitter.com/koyolihc",
+      "bandcamp": "https://koyolihc.bandcamp.com/",
+      "instagram": "https://www.instagram.com/koyolihc/"
+    }
+  },
+  {
+    "name": "FinalBossFight!",
+    "homeBase": {
+      "city": "Flint",
+      "state": "MI",
+      "country": "US",
+      "latLong": {
+        "lat": 43.0125,
+        "long": -83.6875
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/56SGmycHilSn2JzJfaKSww?si=aXgrhCPdRlScMRiNBuI_Hw",
+      "twitter": "https://twitter.com/FinalBossFight1",
+      "bandcamp": "https://finalbossfight.bandcamp.com/",
+      "instagram": "https://www.instagram.com/finalbossfight1"
+    }
+  },
+  {
+    "name": "Captain Jazz",
+    "homeBase": {
+      "city": "Nashville",
+      "state": "TN",
+      "country": "US",
+      "latLong": {
+        "lat": 36.1627,
+        "long": -86.7816
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/1wP2gDN6OSBhYsTBY8FHM9?si=Dc-Gy9HORgK31dUCF07yog",
+      "twitter": "https://twitter.com/captainjazzband",
+      "bandcamp": "https://captainjazz.bandcamp.com/",
+      "instagram": "https://www.instagram.com/corporaljazz/"
+    }
+  },
+  {
+    "name": "Ben Quad",
+    "homeBase": {
+      "city": "Oklahoma City",
+      "state": "OK",
+      "country": "US",
+      "latLong": {
+        "lat": 35.4676,
+        "long": -97.5164
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2FdTMoKlQiI4m0158FbrQE?si=oRDhhSOhTgmRuMIlyk5QsA",
+      "twitter": "https://twitter.com/benquadok",
+      "bandcamp": "https://benquad.bandcamp.com/",
+      "instagram": "https://www.instagram.com/benquadok"
+    }
+  },
+  {
+    "name": "Charmer",
+    "homeBase": {
+      "city": "Marquette",
+      "state": "MI",
+      "country": "US",
+      "latLong": {
+        "lat": 46.5436,
+        "long": -87.3956
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/6vXndytZhDoSVuUIo3rOYc?si=pBUYIa39TTWZCqcXDgi0xA",
+      "twitter": "https://twitter.com/charmer_mi",
+      "bandcamp": "https://charmermusic.bandcamp.com/",
+      "instagram": "https://www.instagram.com/charmermi_"
+    }
+  },
+  {
+    "name": "Free Throw",
+    "homeBase": {
+      "city": "Nashville",
+      "state": "TN",
+      "country": "US",
+      "latLong": {
+        "lat": 36.1627,
+        "long": -86.7816
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/49b68DLRK5eCbtJf7Xx4Cc?si=1H_YvF96SYqzEsi_GZnCyQ",
+      "twitter": "https://twitter.com/freethrowemo",
+      "bandcamp": "https://freethrowemo.bandcamp.com/",
+      "instagram": "https://www.instagram.com/freethrowemo/"
+    }
+  },
+  {
+    "name": "Cinema Stare",
+    "homeBase": {
+      "city": "New Haven",
+      "state": "CT",
+      "country": "US",
+      "latLong": {
+        "lat": 41.3083,
+        "long": -72.9279
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/14v9fqvtGdxFYVuvaJLuM0?si=YLQNhRmrTLi62Tvvor7TAg",
+      "twitter": "https://twitter.com/CinemaStare",
+      "bandcamp": "https://cinemastare.bandcamp.com/",
+      "instagram": "https://www.instagram.com/cinemastare/"
+    }
+  },
+  {
+    "name": "CLIFFDIVER",
+    "homeBase": {
+      "city": "Tulsa",
+      "state": "OK",
+      "country": "US",
+      "latLong": {
+        "lat": 36.1540,
+        "long": -95.9928
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/3yYFfLWWw90qPAloqOGM7x?si=Uh5nzw4dSv6B071cWjjq_A",
+      "twitter": "https://twitter.com/cliffdiverok",
+      "bandcamp": "https://cliffdiverok.bandcamp.com/",
+      "instagram": "https://www.instagram.com/cliffdiverok"
+    }
   }
 ]

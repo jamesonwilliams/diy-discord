@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Burn Bright MKE",
+    "venue": {
+      "name": "The Very Famous X-Ray Arcade",
+      "url": "https://xrayarcade.com/",
+      "location": "Milwaukee, WI"
+    },
+    "image": "burn-bright-mke.jpg",
+    "startDate": "2024-02-24",
+    "endDate": "2024-02-25",
+    "ticketUrl": "https://www.etix.com/ticket/p/63689799/burn-bright-mke-cudahy-xray-arcade"
+  },
+  {
+    "title": "Pug Fest 2",
+    "venue": {
+      "name": "Various",
+      "url": "https://www.noxp.org/event-details/pugfest-2",
+      "location": "Ferndale, MI"
+    },
+    "image": "pug-fest-2.webp",
+    "startDate": "2024-06-28",
+    "endDate": "2024-06-30",
+    "ticketUrl": "https://www.noxp.org/event-details/pugfest-2"
+  },
+  {
+    "title": "Rounadbout",
+    "venue": {
+      "name": "Russell Industrial Center",
+      "url": "https://thecrofoot.com/events/roundabout-festival-featuring-mom-jeans/",
+      "location": "Detroit, MI"
+    },
+    "image": "roundabout.png",
+    "startDate": "2024-03-30",
+    "endDate": "2024-03-30",
+    "ticketUrl": "https://www.ticketweb.com/event/roundabout-festival-2024-russell-industrial-center-tickets/13857708?pl=crofoot"
+  },
+    {
+        "title": "Gnargaritaville",
+        "venue": {
+        "name": "The Vanguard",
+        "url": "https://www.thevanguardtulsa.com/",
+        "location": "Tulsa, OK"
+        },
+        "image": "gnargaritaville.png",
+        "startDate": "2024-05-06",
+        "endDate": "2024-05-06",
+        "ticketUrl": "https://www.ticketweb.com/event/gnargaritaville-2024-the-vanguard-tickets/13331553"
+    },
+        {
+          "title": "Stoopfest",
+          "venue": {
+            "name": "Hunter Park",
+            "url": "https://www.lansing.org/listings/hunter-park/3572/",
+            "location": "Lansing, MI"
+          },
+          "image": "stoopfest.png",
+          "startDate": "2024-05-10",
+          "endDate": "2024-05-11",
+          "ticketUrl": "https://www.eventbrite.com/e/stoopfest-2024-tickets-771156378487?aff=erelexpmlt"
+        }
+]
