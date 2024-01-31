@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Aren't we Amphibians",
+    "homeBase": {
+      "city": "San Diego",
+      "state": "CA",
+      "country": "USA",
+      "latLong": {
+        "lat": 32.7157,
+        "long": -117.1611
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2hTv2oTIcfByggCy3Mkzsy?si=AE5l1Td5ReGYLOEuKImIow",
+      "twitter": "https://twitter.com/amphibiansCA",
+      "bandcamp": "https://arentweamphibians.bandcamp.com",
+      "instagram": "https://www.instagram.com/arentweamphibians"
+    }
+  },
+  {
+    "name": "Red Sun",
+    "homeBase": {
+      "city": "Oklahoma City",
+      "state": "OK",
+      "country": "USA",
+      "latLong": {
+        "lat": 35.4676,
+        "long": -97.5164
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2EBOAZfR66SwpO9mGKsaul?si=lb88x9NxRCatyTIWdL80Tw",
+      "twitter": "https://twitter.com/redsun405",
+      "bandcamp": "https://redsun405.bandcamp.com",
+      "instagram": "https://www.instagram.com/redsunok"
+    }
+  },
+  {
+    "name": "Del Paxton",
+    "homeBase": {
+      "city": "Buffalo",
+      "state": "NY",
+      "country": "USA",
+      "latLong": {
+        "lat": 42.8864,
+        "long": -78.8784
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/6xfq2lQ3eodSswZZBoJkkD?si=673b2PHpRmKXfumtiajX_w",
+      "twitter": "https://twitter.com/delpaxtonbflo",
+      "bandcamp": "https://delpaxton.bandcamp.com",
+      "instagram": "https://www.instagram.com/delpaxtonbuffalo"
+    }
+  },
+  {
+    "name": "Excuse Me Who Are You?",
+    "homeBase": {
+      "city": "Madison",
+      "state": "WI",
+      "country": "USA",
+      "latLong": {
+        "lat": 43.0731,
+        "long": -89.4012
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2JxmoHIJJlVglBY5AXSbSA?si=vkwnMjgrS_eWseWya2QLTg",
+      "twitter": "https://twitter.com/EMWAY608",
+      "bandcamp": "https://emway.bandcamp.com",
+      "instagram": "https://www.instagram.com/emway608"
+    }
+  },
+  {
+    "name": "I Hate It Too",
+    "homeBase": {
+      "city": "Akron",
+      "state": "OH",
+      "country": "USA",
+      "latLong": {
+        "lat": 41.0814,
+        "long": -81.519
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/1yvkvm125rCRFqYLatMISD?si=pcwJQlxQSWemXjQPcQCurg",
+      "twitter": "https://twitter.com/IHateItTooBand",
+      "bandcamp": "https://ihateittoo.bandcamp.com/",
+      "instagram": "https://www.instagram.com/ihateitoo/"
+    }
+  },
+  {
+    "name": "The Casper Fight Scene",
+    "homeBase": {
+      "city": "Marquette",
+      "state": "MI",
+      "country": "USA",
+      "latLong": {
+        "lat": 46.5436,
+        "long": -87.3956
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/3UAKHD6HtIntfmQB0eSVYm?si=Phy8git7T0Cs7Rz3xIlMng",
+      "twitter": "https://twitter.com/CASPERmi_",
+      "bandcamp": "https://thecasperfightscene.bandcamp.com/",
+      "instagram": "https://www.instagram.com/thecasperfightscene"
+    }
+  },
+  {
+    "name": "Palette Knife",
+    "homeBase": {
+      "city": "Columbus",
+      "state": "OH",
+      "country": "US",
+      "latLong": {
+        "lat": 39.9612,
+        "long": -82.9988
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2NjNeRA9xtah9fJGCQOxNf?si=RAbpob3zR-6bdtZW2FveIg",
+      "twitter": "https://twitter.com/palettestaches",
+      "bandcamp": "https://paletteknife.bandcamp.com/",
+      "instagram": "https://www.instagram.com/paletteknifeband/"
+    }
+  },
+  {
+    "name": "The Others Like Us",
+    "homeBase": {
+      "city": "Tulsa",
+      "state": "OK",
+      "country": "US",
+      "latLong": {
+        "lat": 36.154,
+        "long": -95.9928
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/5khTgo6NjG1ZiF93ts1rDp?si=59Ocqsh1TVehDdR1O8q9uA",
+      "twitter": "https://twitter.com/theotherslikeus",
+      "bandcamp": "https://theotherslikeus.bandcamp.com",
+      "instagram": "https://www.instagram.com/theotherslikeus"
+    }
+  },
+  {
+    "name": "MooseCreek Park",
+    "homeBase": {
+      "city": "Long Island",
+      "state": "NY",
+      "country": "US",
+      "latLong": {
+        "lat": 40.7891,
+        "long": -73.135
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0fDkJta7XRi6eDBgLDRP4f?si=OLbBmR32RS2cAhqkN_tIUA",
+      "twitter": "https://twitter.com/moosecreekpark",
+      "bandcamp": "https://moosecreekpark.bandcamp.com/",
+      "instagram": "https://www.instagram.com/moosecreekpark"
+    }
+  },
+  {
+    "name": "Harrison Gordon",
+    "homeBase": {
+      "city": "Normal",
+      "state": "IL",
+      "country": "US",
+      "latLong": {
+        "lat": 40.5142,
+        "long": -88.9906
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0DpBrLHJdZh2iAId301CwV?si=JSwTc57-SkCDQlkR4UDexg",
+      "twitter": "https://twitter.com/harrisongordo13",
+      "bandcamp": "https://harrisongordon1.bandcamp.com/",
+      "instagram": "https://www.instagram.com/harrisongordon_il/"
+    }
+  },
+  {
+    "name": "Quarter Conscious",
+    "homeBase": {
+      "city": "Berkeley",
+      "state": "CA",
+      "country": "US",
+      "latLong": {
+        "lat": 37.8716,
+        "long": -122.2727
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/2nu3fRH6eGlzGltBSOnRrc?si=FjCXKkDQTxqQFaw-2tpB8Q",
+      "twitter": "https://twitter.com/qtrconscious",
+      "bandcamp": "https://quarterconscious.bandcamp.com/",
+      "instagram": "https://www.instagram.com/quarterconscious"
+    }
+  },
+  {
+    "name": "Saturdays at Your Place",
+    "homeBase": {
+      "city": "Kalamazoo",
+      "state": "MI",
+      "country": "US",
+      "latLong": {
+        "lat": 42.2917,
+        "long": -85.5872
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/69Kp4bE7aUWEPrmTwmhVZR?si=h5wZ8aYZSF2UfSRHT2Op0Q",
+      "twitter": "https://twitter.com/saypband",
+      "bandcamp": "https://saturdaysatyourplace.bandcamp.com/",
+      "instagram": "https://www.instagram.com/saturdaysatyourplace"
+    }
+  },
+  {
+    "name": "Carly Cosgrove",
+    "homeBase": {
+      "city": "Philadelphia",
+      "state": "PA",
+      "country": "US",
+      "latLong": {
+        "lat": 39.9526,
+        "long": -75.1652
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/4h3DxZa1JxZhSB1a64ziKx?si=K1hjgHh7Tc-VNSEZm8Y3Cw",
+      "twitter": "https://twitter.com/CarlyCosgrovePA",
+      "bandcamp": "https://carlycosgrove.bandcamp.com/",
+      "instagram": "https://www.instagram.com/carlycosgrovepa"
+    }
+  },
+  {
+    "name": "Sweet Pill",
+    "homeBase": {
+      "city": "Philadelphia",
+      "state": "PA",
+      "country": "US",
+      "latLong": {
+        "lat": 39.9526,
+        "long": -75.1652
+      }
+    },
+    "socials": {
+      "spotify": "https://open.spotify.com/artist/0fNyhBvhR5Xw6s0EYQewUa?si=uPgaOTy4SSKuU1HE4RmKBw",
+      "twitter": "https://x.com/sweetpilll",
+      "bandcamp": "https://sw33tpill.bandcamp.com/",
+      "instagram": "https://www.instagram.com/sweetpilll"
+    }
+  }
+]
