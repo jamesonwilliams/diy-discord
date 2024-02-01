@@ -27,23 +27,11 @@ export default function MapWithMarkers({
     undefined
   );
   const [zoomLevel, setZoomLevel] = useState(3);
-  
+
   useEffect(() => {
-    // Calculate the zoom level based on the device screen width
-    const calculateZoomLevel = () => {
-      const screenWidth = window.innerWidth;
-      const zoom = 2.8 + ((screenWidth - 300) * 0.0015);
-      setZoomLevel(zoom);
-    };
-
-    // Call calculateZoomLevel initially and add event listener for screen resize
-    calculateZoomLevel();
-    window.addEventListener("resize", calculateZoomLevel);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("resize", calculateZoomLevel);
-    };
+    const screenWidth = window.innerWidth;
+    const zoom = 2.8 + (screenWidth - 300) * 0.0015;
+    setZoomLevel(zoom);
   }, []);
 
   const markers = groupCoordinates(coordinates, 50).map((coordinate) => {
