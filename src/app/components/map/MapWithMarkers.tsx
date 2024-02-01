@@ -102,7 +102,7 @@ const MapWithMarkers: React.FC<MapWithMarkersProps> = ({ coordinates, mapsApiKey
             }}
             onCloseClick={handleInfoWindowClose}
           >
-            <div>{selectedMarker.label}</div>
+            <div className="text-black">{selectedMarker.label}</div>
           </InfoWindow>
         )}
       </>
