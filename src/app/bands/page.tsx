@@ -1,12 +1,11 @@
 import React, { Suspense } from "react";
 import { Band } from "../types/Band";
-import fs from "fs";
-import path from 'path';
 import BandList from "./BandList";
 import MapWithMarkers from "../components/map/MapWithMarkers";
+import getBands from "../utils/getBands";
 
 export default async function Page() {
-  const bands = getBands();
+  const bands: Band[] = await getBands()
   const coordinates = bands.map((band: Band) => {
     return {
       lat: band.homeBase.latLong.lat,
@@ -27,11 +26,3 @@ export default async function Page() {
     </div>
   );
 };
-
-function getBands(): Band[] {
-  const jsonPath = path.join(process.cwd(), "data", "bands.json");
-  const bandsData = fs.readFileSync(jsonPath, "utf8");
-  return JSON.parse(bandsData).sort((a: Band, b: Band) => {
-    return a.name.localeCompare(b.name);
-  });
-}
