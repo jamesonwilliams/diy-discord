@@ -73,7 +73,6 @@ export default function MapWithMarkers({
           gestureHandling={"greedy"}
           streetViewControl={false}
           mapTypeControl={false}
-          controlSize={20}
           onClick={() => setSelectedMarker(undefined)}
         >
           {markers}
