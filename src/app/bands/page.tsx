@@ -1,8 +1,9 @@
 import React, { Suspense } from "react";
 import { Band } from "../types/Band";
 import BandList from "./BandList";
-import MapWithMarkers from "../components/map/MapWithMarkers";
 import getBands from "../utils/getBands";
+
+const MapWithMarkersLazy = React.lazy(() => import("../components/map/MapWithMarkers"));
 
 export default async function Page() {
   const bands: Band[] = await getBands()
@@ -17,7 +18,7 @@ export default async function Page() {
   return (
     <div className="min-w-full">
       <Suspense fallback={<div>Loading...</div>}>
-        <MapWithMarkers
+        <MapWithMarkersLazy
           coordinates={coordinates}
           mapsApiKey={process.env.GOOGLE_MAPS_API_KEY!!}
         />

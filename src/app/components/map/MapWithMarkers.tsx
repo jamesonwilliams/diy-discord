@@ -1,10 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
-import { GoogleMap, Marker, useLoadScript, InfoWindow } from "@react-google-maps/api";
-import { getDistanceFromLatLonInKm } from "../../utils/distance";
+import {
+  APIProvider,
+  Map,
+  Marker,
+  InfoWindow,
+} from "@vis.gl/react-google-maps";
+import { useState, useEffect } from "react";
 import { LatLong } from "@/app/types/LatLong";
-import ReactDOM from "react-dom";
+import { getDistanceFromLatLonInKm } from "@/app/utils/distance";
 
 interface Coordinate {
   lat: number;
@@ -12,137 +16,91 @@ interface Coordinate {
   label: string;
 }
 
-interface MapWithMarkersProps {
-  coordinates: Coordinate[];
+export default function MapWithMarkers({
+  mapsApiKey,
+  coordinates,
+}: {
   mapsApiKey: string;
-}
-
-const MapWithMarkers: React.FC<MapWithMarkersProps> = ({ coordinates, mapsApiKey }) => {
-  const mapContainerStyle: React.CSSProperties = {
-    width: "100%",
-    height: "400px",
-  };
-
-  const defaultCenter = {
-    lat: 38.627003,
-    lng: -95.199402,
-    label: "",
-  };
+  coordinates: Coordinate[];
+}) {
+  const [selectedMarker, setSelectedMarker] = useState<Coordinate | undefined>(
+    undefined
+  );
+  const [zoomLevel, setZoomLevel] = useState(3);
   
-  const [selectedMarker, setSelectedMarker] = useState<Coordinate | null>(
-    null
+  useEffect(() => {
+    // Calculate the zoom level based on the device screen width
+    const calculateZoomLevel = () => {
+      const screenWidth = window.innerWidth;
+      const zoom = 2.8 + ((screenWidth - 300) * 0.0015);
+      setZoomLevel(zoom);
+    };
+
+    // Call calculateZoomLevel initially and add event listener for screen resize
+    calculateZoomLevel();
+    window.addEventListener("resize", calculateZoomLevel);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", calculateZoomLevel);
+    };
+  }, []);
+
+  const markers = groupCoordinates(coordinates, 50).map((coordinate) => {
+    return (
+      <Marker
+        key={coordinate.label}
+        position={{ lat: coordinate.lat, lng: coordinate.lng }}
+        onClick={() => {
+          setSelectedMarker(coordinate);
+        }}
+      />
+    );
+  });
+
+  const infoWindow = selectedMarker ? (
+    <InfoWindow
+      position={{
+        lat: selectedMarker.lat,
+        lng: selectedMarker.lng,
+      }}
+      onCloseClick={() => setSelectedMarker(undefined)}
+      disableAutoPan={true}
+    >
+      <div className="text-black">{selectedMarker.label}</div>
+    </InfoWindow>
+  ) : (
+    <></>
   );
-  const [center, setCenter] = useState<Coordinate>({
-    lat: defaultCenter.lat,
-    lng: defaultCenter.lng,
-    label: defaultCenter.label
-  });
-    
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: mapsApiKey,
-    libraries: ["places"]
-  });
-
-  if (loadError) {
-    return <div>Error loading maps</div>;
-  }
-
-  if (!isLoaded) {
-    return <div>Loading maps</div>;
-  }
-
-  const handleMarkerClick = (coord: Coordinate) => {
-    setSelectedMarker(coord);
-  };
-
-  const handleInfoWindowClose = () => {
-    setSelectedMarker(null);
-  };
-
-  const clusteredCoordindates = groupCoordinates(coordinates, 25);
-
-  const handleLoad = (map: google.maps.Map) => {
-    if (!isLoaded) return;
-    const centerMeButton = <CenterMeButton map={map} />;
-    const centerControlDiv = document.createElement("div");
-    // eslint-disable-next-line react/no-deprecated
-    ReactDOM.render(centerMeButton, centerControlDiv);
-    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
-  };
 
   return (
-    <GoogleMap
-      mapContainerStyle={mapContainerStyle}
-      center={center}
-      zoom={3.5}
-      onLoad={handleLoad}
-      onClick={() => setSelectedMarker(null)}
-      options={{
-        disableDefaultUI: true,
-        zoomControl: true,
-        fullscreenControl: true,
-        streetViewControl: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-      }}
-    >
-      <>
-        {clusteredCoordindates.map((coord, index) => (
-          <Marker
-            key={index}
-            position={{ lat: coord.lat, lng: coord.lng }}
-            title={coord.label}
-            onClick={() => handleMarkerClick(coord)}
-          />
-        ))}
-        {selectedMarker && (
-          <InfoWindow
-            position={{
-              lat: selectedMarker.lat,
-              lng: selectedMarker.lng,
-            }}
-            onCloseClick={handleInfoWindowClose}
-          >
-            <div className="text-black">{selectedMarker.label}</div>
-          </InfoWindow>
-        )}
-      </>
-    </GoogleMap>
+    <div className="h-96 w-full">
+      <APIProvider apiKey={mapsApiKey}>
+        <Map
+          center={{
+            lat: 38.627003,
+            lng: -98.199402,
+          }}
+          zoom={zoomLevel}
+          gestureHandling={"greedy"}
+          streetViewControl={false}
+          mapTypeControl={false}
+          controlSize={20}
+          onClick={() => setSelectedMarker(undefined)}
+        >
+          {markers}
+          {infoWindow}
+        </Map>
+      </APIProvider>
+    </div>
   );
-};
-
-interface CenterMeButtonProps {
-  map: google.maps.Map;
 }
-
-const CenterMeButton: React.FC<CenterMeButtonProps> = ({ map }) => {
-  const handleCenterMeClick = () => {
-    navigator.geolocation.getCurrentPosition((position) => {
-      const { latitude, longitude } = position.coords;
-      map.panTo({ lat: latitude, lng: longitude });
-    });
-  };
-
-  return (
-    <button
-      style={{
-        position: "absolute",
-        top: "260px",
-        right: "10px",
-        zIndex: 1,
-        backgroundColor: "white",
-        border: "1px solid #ccc",
-        borderRadius: "2px",
-        padding: "6px",
-      }}
-      onClick={handleCenterMeClick}
-    >
-      Center
-    </button>
-  );
-};
 
 // Function to group nearby coordinates into clusters
-function groupCoordinates(coordinates: Coordinate[], maxDistance: number): Coordinate[] {
+function groupCoordinates(
+  coordinates: Coordinate[],
+  maxDistance: number
+): Coordinate[] {
   const clusters: Coordinate[] = [];
 
   for (let i = 0; i < coordinates.length; i++) {
@@ -157,7 +115,10 @@ function groupCoordinates(coordinates: Coordinate[], maxDistance: number): Coord
         lat: clusters[j].lat,
         long: clusters[j].lng,
       };
-      const distance = getDistanceFromLatLonInKm(coordinateLatLng, clusterLatLong);
+      const distance = getDistanceFromLatLonInKm(
+        coordinateLatLng,
+        clusterLatLong
+      );
 
       if (distance <= maxDistance) {
         // Add the coordinate to an existing cluster
@@ -175,5 +136,3 @@ function groupCoordinates(coordinates: Coordinate[], maxDistance: number): Coord
 
   return clusters;
 }
-
-export default MapWithMarkers;
