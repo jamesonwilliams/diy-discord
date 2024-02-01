@@ -62,7 +62,7 @@ export default function MapWithMarkers({
   );
 
   return (
-    <div className="h-96 w-full">
+    <div className="h-96 w-full" tabIndex={-1}>
       <APIProvider apiKey={mapsApiKey}>
         <Map
           center={{
