@@ -1,3 +1,7 @@
+import BandcampIcon from "../components/social-icons/BandcampIcon";
+import InstagramIcon from "../components/social-icons/InstagramIcon";
+import SpotifyIcon from "../components/social-icons/SpotifyIcon";
+import XIcon from "../components/social-icons/XIcon";
 import { Socials } from "../types/Band";
 import Link from "next/link";
 
@@ -7,22 +11,22 @@ export default function SocialsList({ socials }: { socials: Socials }) {
       {socials.instagram &&
       <li>
         <Link href={socials.instagram} target="_blank">
-          IG
+          <InstagramIcon />
         </Link>
       </li>}
       {socials.twitter && <li>
         <Link href={socials.twitter} target="_blank">
-          X
+          <XIcon />
         </Link>
       </li>}
       {socials.bandcamp && <li>
         <Link href={socials.bandcamp} target="_blank">
-          BC
+          <BandcampIcon />
         </Link>
       </li>}
       {socials.spotify && <li>
         <Link href={socials.spotify} target="_blank">
-          SP
+          <SpotifyIcon />
         </Link>
       </li>}
     </ul>
