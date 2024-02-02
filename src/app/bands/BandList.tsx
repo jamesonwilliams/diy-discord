@@ -4,7 +4,7 @@ import { Band } from "../types/Band";
 import { useSearchParams } from "next/navigation";
 import { LatLong } from "../types/LatLong";
 import SocialsList from "./SocialsList";
-import SortButton from "./SortButton";
+import BandListOptions from "./BandListOptions";
 import { SortKey } from "../types/SortKey";
 import { compareNames } from "../utils/compareNames";
 import { compareDistances } from "../utils/distance";
@@ -18,7 +18,7 @@ export default function BandList({ bands }: { bands: Band[] }) {
 
   return (
     <div className="p-8 max-w-xl mx-auto">
-      <SortButton sortKey={sortKey} initialLocation={location} />
+      <BandListOptions sortKey={sortKey} initialLocation={location} />
       <div className="flex-grow">
         {sortedBands.map((band: Band) => (
           <BandRow key={band.name} band={band} />
@@ -26,13 +26,7 @@ export default function BandList({ bands }: { bands: Band[] }) {
       </div>
       <div>
         <p className="text-gray-500 py-4">
-          Showing {sortedBands.length} bands.{" "}
-          <Link
-            target="_new"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=jhwilliams@gmail.com&su=Add%20my%20band&body=Band%20camp%20link%20here..."
-          >
-            Add your band
-          </Link>
+          Showing {sortedBands.length} bands.
         </p>
       </div>
     </div>

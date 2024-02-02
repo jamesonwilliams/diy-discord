@@ -4,7 +4,7 @@ import { SortKey } from "../types/SortKey";
 import { LatLong } from "../types/LatLong";
 import { useEffect, useState } from "react";
 
-export default function SortButton({ 
+export default function BandListOptions({ 
   sortKey,
   initialLocation
 }: { 
@@ -34,7 +34,7 @@ export default function SortButton({
 
   return (
     <>
-      <ul className="flex gap-8 font-bold">
+      <ul className="flex gap-4 justify-between font-bold">
         <li>
           <button
             className="pb-8"
@@ -51,6 +51,14 @@ export default function SortButton({
             Sort by closest to you
           </button>
         </li> || <p className="opacity-50">Getting your location...</p>}
+        <li>
+          <button
+            className="pb-8"
+            onClick={() => router.push("/bands/add")}
+          >
+            Add a band
+          </button>
+        </li>
       </ul>
     </>
   );
