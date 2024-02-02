@@ -124,7 +124,7 @@ function validateSocials(...vals: [string, string][]) {
         );
       }
     } else if (name === "Instagram") {
-      const instagramRegex = /^https:\/\/(www\.)?instagram\.com\/\w+\/?$/;
+      const instagramRegex = /^https:\/\/(www\.)?instagram\.com\/[\w\.]+\/?$/;
       if (!instagramRegex.test(url)) {
         throw new Error(
           "Invalid Instagram URL. Must look like https://www.instagram.com/<name>/."
