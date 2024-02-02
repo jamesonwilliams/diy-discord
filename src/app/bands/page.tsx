@@ -2,7 +2,6 @@
 
 import React, { Suspense, useEffect, useState } from "react";
 import { Band } from "../types/Band";
-import getBaseUrl from "../utils/getBaseUrl";
 import LoadingSpinner from "../components/spinner/LoadingSpinner";
 
 const MapWithMarkersLazy = React.lazy(
@@ -24,7 +23,7 @@ export default function BandsPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${getBaseUrl()}/api/bands`);
+        const response = await fetch(`/api/bands`);
         if (!response.ok) {
           throw new Error("Failed to fetch bands");
         }
