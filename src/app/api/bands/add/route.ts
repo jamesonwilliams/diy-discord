@@ -1,7 +1,6 @@
 import { sql } from "@vercel/postgres";
 import { NextResponse } from "next/server";
-import { Band, Socials } from "@/app/types/Band";
-import createBand from "@/app/utils/createBand";
+import { Band } from "@/app/types/Band";
 import { Location } from "@/app/types/Location";
 
 export async function POST(request: Request) {
@@ -118,7 +117,7 @@ function validateSocials(...vals: [string, string][]) {
         );
       }
     } else if (name === "Bandcamp") {
-      const bandcampRegex = /^https:\/\/\w+\.bandcamp\.com\/?$/;
+      const bandcampRegex = /^https:\/\/[\w\-]+\.bandcamp\.com\/?$/;
       if (!bandcampRegex.test(url)) {
         throw new Error(
           "Invalid Bandcamp URL. Must look like https://<name>.bandcamp.com."
@@ -192,4 +191,33 @@ async function hydrateLatLong(band: Band): Promise<Band> {
       latLong: { lat, long: lng },
     },
   });
+}
+
+async function createBand(band: Band): Promise<boolean> {
+  const result = await sql`
+    INSERT INTO Bands (
+        name,
+        city,
+        state,
+        country,
+        lat,
+        long,
+        spotify,
+        bandcamp,
+        instagram,
+        twitter
+    ) VALUES (
+        ${band.name},
+        ${band.homeBase.city},
+        ${band.homeBase.state},
+        ${band.homeBase.country},
+        ${band.homeBase.latLong.lat},
+        ${band.homeBase.latLong.long},
+        ${band.socials.spotify},
+        ${band.socials.bandcamp},
+        ${band.socials.instagram},
+        ${band.socials.twitter}
+    );
+  `;
+  return result.rowCount === 1;
 }

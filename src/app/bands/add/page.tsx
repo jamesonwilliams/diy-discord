@@ -44,7 +44,7 @@ export default function AddBandPage() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/add-band", {
+      const response = await fetch("/api/bands/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,9 +1,22 @@
-import { Band } from "../types/Band";
-import { sql } from "@vercel/postgres";
 
-export default async function getBands(): Promise<Band[]> {
+import { Band } from "@/app/types/Band";
+import { sql } from "@vercel/postgres";
+import { NextResponse } from "next/server";
+
+export async function GET(request: Request) {
+  try {
+    const bands = await getBands();
+    return NextResponse.json({ bands: bands, count: bands.length }, { status: 200 });
+  } catch (error) {
+    return NextResponse.json(
+      { error: (error as Error).message },
+      { status: 400 }
+    );
+  }
+}
+
+async function getBands(): Promise<Band[]> {
   const result = await sql`SELECT * FROM bands`;
-  // Map the database result to your Band interface
   return result.rows.map((row: any) => {
     return {
       id: row.id,
