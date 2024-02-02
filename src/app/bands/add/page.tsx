@@ -70,17 +70,18 @@ export default function AddBandPage() {
   return (
     <div className="text-center">
       <h1 className="text-xl pt-8">Add a band</h1>
+      <p className="max-w-96 pt-4 text-gray-500 text-sm">Please only add bands that are actively recording/touring. DIY bands generally have under 2,000,000 total streams.</p>
       <form className="p-4" onSubmit={handleSubmit}>
         <InputFields formData={formData} handleChange={handleChange} />
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded"
+          className="bg-blue-500 text-white px-4 py-2 m-4 rounded"
           disabled={isSubmitting}
         >
           {isSubmitting ? "Submitting..." : "Submit"}
         </button>
       </form>
-      {submissionMessage && <p className="w-96 mx-auto text-red-400">{submissionMessage}</p>}
+      {submissionMessage && <p className="mx-auto text-red-400">{submissionMessage}</p>}
     </div>
   );
 }
@@ -92,10 +93,10 @@ function InputFields({
   formData: FormData;
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }) {
-  const divClass = "flex items-center mb-2";
-  const labelClass = "w-24 mr-2 text-right";
+  const divClass = "flex flex-col items-center mb-2";
+  const labelClass = "w-72 mt-1 text-left";
   const inputClass = `
-    flex-grow p-2 text-black rounded-md border border-gray-500 text-sm w-64
+    flex-grow p-2 text-black rounded-md border border-gray-500 text-sm w-72
     focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-gray-200
   `;
 
