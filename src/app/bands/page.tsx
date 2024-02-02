@@ -2,10 +2,13 @@ import React, { Suspense } from "react";
 import { Band } from "../types/Band";
 import BandList from "./BandList";
 import getBands from "../utils/getBands";
+import { unstable_noStore as noStore } from "next/cache";
+
 
 const MapWithMarkersLazy = React.lazy(() => import("../components/map/MapWithMarkers"));
 
 export default async function Page() {
+  noStore();
   const bands: Band[] = await getBands()
   const coordinates = bands.map((band: Band) => {
     return {
