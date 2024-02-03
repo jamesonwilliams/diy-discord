@@ -1,23 +1,29 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-import Link from 'next/link';
+const tabs = [
+  { name: "Home", path: "/" },
+  { name: "Bands", path: "/bands" },
+  { name: "Events", path: "/events" },
+  { name: "Venues", path: "/venues" },
+];
 
 export default function Navbar() {
+  const router = usePathname();
+  const selectedTab = tabs.find((tab) => tab.path === router);
   return (
     <>
       <nav className="flex justify-between flex-wrap p-3">
         <ul className="flex">
-          <li className="ml-3">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="ml-3">
-            <Link href="/bands">Bands</Link>
-          </li>
-          <li className="ml-3">
-            <Link href="/events">Events</Link>
-          </li>
-          <li className="ml-3">
-            <Link href="/venues">Venues</Link>
-          </li>
+          {tabs.map((tab) => (
+            <li
+              key={tab.name}
+              className={`ml-4 ${tab.name === selectedTab?.name ? "font-bold border-b-2" : ""}`}
+            >
+              <Link href={tab.path}>{tab.name}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </>
