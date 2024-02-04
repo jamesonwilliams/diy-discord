@@ -9,6 +9,8 @@ const MapWithMarkersLazy = React.lazy(
 );
 const BandListLazy = React.lazy(() => import("./BandList"));
 
+export const dynamic = "force-dynamic";
+
 export default function BandsPage() {
   const [bands, setBands] = useState<Band[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -23,7 +25,7 @@ export default function BandsPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`/api/bands`);
+        const response = await fetch(`/api/bands`, { cache: "no-store" });
         if (!response.ok) {
           throw new Error("Failed to fetch bands");
         }

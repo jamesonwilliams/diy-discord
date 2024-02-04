@@ -3,10 +3,15 @@ import { Band } from "@/app/types/Band";
 import { sql } from "@vercel/postgres";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 export async function GET(request: Request) {
   try {
     const bands = await getBands();
-    return NextResponse.json({ bands: bands, count: bands.length }, { status: 200 });
+    return NextResponse.json(
+      { bands: bands, count: bands.length },
+      { status: 200 }
+    );
   } catch (error) {
     return NextResponse.json(
       { error: (error as Error).message },
