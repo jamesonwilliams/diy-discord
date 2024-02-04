@@ -32,13 +32,10 @@ async function validateBand(band: Band): Promise<void> {
     ["State", band.homeBase.state],
     ["Country", band.homeBase.country],
     ["Spotify", band.socials.spotify],
-    ["Bandcamp", band.socials.bandcamp],
-    ["Instagram", band.socials.instagram],
-    ["X", band.socials.twitter]
   );
   await validateNotExists(band);
   validateHomeBase(band.homeBase);
-  validateSocials(
+  validateLinks(
     ["Spotify", band.socials.spotify],
     ["Bandcamp", band.socials.bandcamp],
     ["Instagram", band.socials.instagram],
@@ -54,45 +51,39 @@ async function validateNotExists(band: Band): Promise<void> {
     return Promise.reject(new Error(`${band.name} already exists.`));
   }
 
-  const bandcampResult = await sql`
-    SELECT * FROM bands WHERE LOWER(bandcamp) = LOWER(${band.socials.bandcamp})
-  `;
-  if (bandcampResult.rowCount > 0) {
-    const name = bandcampResult.rows[0].name;
-    return Promise.reject(
-      new Error(`Bandcamp URL already registered to ${name}.`)
-    );
-  }
+  const urls = [
+    ["bandcamp", band.socials.bandcamp],
+    ["instagram", band.socials.instagram],
+    ["twitter", band.socials.twitter],
+  ];
 
-  const twitterResult = await sql`
-    SELECT * FROM bands WHERE LOWER(twitter) = LOWER(${band.socials.twitter})
-  `;
-  if (twitterResult.rowCount > 0) {
-    const name = twitterResult.rows[0].name;
-    return Promise.reject(
-      new Error(`Twitter URL already registered to ${name}.`)
-    );
-  }
-
-  const instagramResult = await sql`
-    SELECT * FROM bands WHERE LOWER(instagram) = LOWER(${band.socials.instagram})
-  `;
-  if (instagramResult.rowCount > 0) {
-    const name = instagramResult.rows[0].name;
-    return Promise.reject(
-      new Error(`Instagram URL already registered to ${name}.`)
-    );
-  }
+  urls.forEach(async ([name, url]) => {
+    if (!isBlank(band.socials.bandcamp)) {
+      const result = await sql`
+        SELECT * FROM bands WHERE LOWER(${name}) = LOWER(${url})
+      `;
+      if (result.rowCount > 0) {
+        const matchedName = result.rows[0].name;
+        return Promise.reject(
+          new Error(`URL for ${name} already registered to ${matchedName}.`)
+        );
+      }
+    }
+  });
 
   return Promise.resolve();
 }
 
 function validateFieldsPresent(...vals: string[][]) {
   for (const val of vals) {
-    if (/^\s*$/.test(val[1])) {
+    if (isBlank(val[1])) {
       throw new Error(`${val[0]} is empty.`);
     }
   }
+}
+
+function isBlank(val: string) {
+  return val.trim().length === 0;
 }
 
 function validateHomeBase(location: Location) {
@@ -107,38 +98,45 @@ function validateHomeBase(location: Location) {
   }
 }
 
-function validateSocials(...vals: [string, string][]) {
+function validateLinks(...vals: [string, string][]) {
+  let urlsProvided = 0;
   vals.forEach(([name, url]) => {
     if (name === "Spotify") {
       const spotifyRegex = /^https:\/\/open\.spotify\.com\/artist\//;
-      if (!spotifyRegex.test(url)) {
+      if (isBlank(url) || !spotifyRegex.test(url)) {
         throw new Error(
           "Invalid Spotify URL. Must start with https://open.spotify.com/artist."
         );
       }
-    } else if (name === "Bandcamp") {
+    } else if (name === "Bandcamp" && !isBlank(url)) {
       const bandcampRegex = /^https:\/\/[\w\-]+\.bandcamp\.com\/?$/;
       if (!bandcampRegex.test(url)) {
         throw new Error(
           "Invalid Bandcamp URL. Must look like https://<name>.bandcamp.com."
         );
       }
-    } else if (name === "Instagram") {
+      urlsProvided++;
+    } else if (name === "Instagram" && !isBlank(url)) {
       const instagramRegex = /^https:\/\/(www\.)?instagram\.com\/[\w\.]+\/?$/;
       if (!instagramRegex.test(url)) {
         throw new Error(
           "Invalid Instagram URL. Must look like https://www.instagram.com/<name>/."
         );
       }
-    } else if (name === "X") {
+      urlsProvided++;
+    } else if (name === "X" && !isBlank(url)) {
       const xOrTwitterRegex = /^https:\/\/(x\.com|twitter\.com)\/\w+\/?$/;
       if (!xOrTwitterRegex.test(url)) {
         throw new Error(
           "Invalid X or Twitter URL. Must look like https://x.com/<name>/ or https://twitter.com/<name>/."
         );
       }
+      urlsProvided++;
     }
   });
+  if (urlsProvided < 1) {
+    throw new Error("At least one social URL must be provided.");
+  }
 }
 
 function buildBand(requestBody: any): Band {
