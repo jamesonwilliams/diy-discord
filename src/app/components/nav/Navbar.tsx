@@ -6,7 +6,6 @@ const tabs = [
   { name: "Home", path: "/" },
   { name: "Bands", path: "/bands" },
   { name: "Events", path: "/events" },
-  { name: "Venues", path: "/venues" },
 ];
 
 export default function Navbar() {
@@ -19,7 +18,10 @@ export default function Navbar() {
           {tabs.map((tab) => (
             <li
               key={tab.name}
-              className={`ml-4 ${tab.name === selectedTab?.name ? "font-bold border-b-2" : ""}`}
+              className={`ml-4 ${
+                tab.name === selectedTab?.name ? "font-bold border-b-2" : ""
+              }`}
+              style={{ borderColor: "var(--my-border-color)" }}
             >
               <Link href={tab.path}>{tab.name}</Link>
             </li>
