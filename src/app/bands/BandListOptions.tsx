@@ -1,6 +1,6 @@
 import { useRouter } from "next/navigation";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
-import { SortKey } from "../types/SortKey";
+import { BandSortKey } from "./BandSortKey";
 import { LatLong } from "../types/LatLong";
 import { useEffect, useState } from "react";
 
@@ -8,7 +8,7 @@ export default function BandListOptions({
   sortKey,
   initialLocation
 }: { 
-  sortKey: SortKey,
+  sortKey: BandSortKey,
   initialLocation: LatLong | undefined 
 }) {
   const router = useRouter();
@@ -38,7 +38,7 @@ export default function BandListOptions({
         <li>
           <button
             className="pb-8"
-            onClick={() => navigate(SortKey.bandName, undefined, router)}
+            onClick={() => navigate(BandSortKey.bandName, undefined, router)}
           >
             Sort by name
           </button>
@@ -46,7 +46,7 @@ export default function BandListOptions({
         {location !== undefined && <li>
           <button
             className="pb-8"
-            onClick={() => navigate(SortKey.location, location, router)}
+            onClick={() => navigate(BandSortKey.location, location, router)}
           >
             Sort by closest to you
           </button>
@@ -65,15 +65,15 @@ export default function BandListOptions({
 }
 
 function navigate(
-  sortKey: SortKey,
+  sortKey: BandSortKey,
   location: LatLong | undefined,
   router: AppRouterInstance
 ) {
-  if (sortKey === SortKey.location && location !== undefined) {
+  if (sortKey === BandSortKey.location && location !== undefined) {
     router.push(
-      `?sort=${SortKey.location}&lat=${location.lat}&long=${location.long}`
+      `?sort=${BandSortKey.location}&lat=${location.lat}&long=${location.long}`
     );
   } else {
-    router.push(`?sort=${SortKey.bandName}`);
+    router.push(`?sort=${BandSortKey.bandName}`);
   }
 }

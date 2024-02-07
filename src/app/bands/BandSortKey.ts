@@ -1,4 +1,4 @@
-export enum SortKey {
+export enum BandSortKey {
   bandName = "bandName",
   location = "location",
 }

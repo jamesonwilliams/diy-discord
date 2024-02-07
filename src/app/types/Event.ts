@@ -1,11 +1,17 @@
 import { Venue } from "./Venue";
 
 export interface Event {
-    title: string;
-    venue: Venue;
-    image: string;
-    startDate: Date;
-    endDate: Date;
-    ticketUrl: string;
+  id: number;
+  title: string;
+  startDate: Date;
+  endDate: Date;
+  imageUrl: string;
+  ticketUrl: string;
+  venueName: string;
+  venueLocation: string;
+  venueUrl: string;
+  venueLat: number;
+  venueLong: number;
+  bandNames: string[];
 };
 

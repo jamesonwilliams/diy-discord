@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { LatLong } from "../types/LatLong";
 import SocialsList from "./SocialsList";
 import BandListOptions from "./BandListOptions";
-import { SortKey } from "../types/SortKey";
+import { BandSortKey } from "./BandSortKey";
 import { compareNames } from "../utils/compareNames";
 import { compareDistances } from "../utils/distance";
 import Link from "next/link";
@@ -35,11 +35,11 @@ export default function BandList({ bands }: { bands: Band[] }) {
 
 function sortBands(
   bands: Band[],
-  sortKey: SortKey,
+  sortKey: BandSortKey,
   location: LatLong | undefined
 ): Band[] {
-  return bands.sort((a: Band, b: Band) => {
-    if (sortKey === SortKey.bandName) {
+  return [...bands].sort((a: Band, b: Band) => {
+    if (sortKey === BandSortKey.bandName) {
       return compareNames(a.name, b.name);
     } else if (location === undefined) {
       throw Error("Location must be provided for location sort");
@@ -65,14 +65,14 @@ function BandRow({ band }: { band: Band }) {
   );
 }
 
-function parseSort(searchParams: URLSearchParams): SortKey {
+function parseSort(searchParams: URLSearchParams): BandSortKey {
   const sort = searchParams.get("sort");
   if (sort === null) {
-    return SortKey.bandName;
-  } else if (sort === SortKey.location) {
-    return SortKey.location;
-  } else if (sort == SortKey.bandName) {
-    return SortKey.bandName;
+    return BandSortKey.bandName;
+  } else if (sort === BandSortKey.location) {
+    return BandSortKey.location;
+  } else if (sort === BandSortKey.bandName) {
+    return BandSortKey.bandName;
   } else {
     throw new Error("Invalid sort key");
   }
